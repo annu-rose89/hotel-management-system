@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+             Moonstone Hotel
+        </div>
+
+        <nav>
+            <a href="/Home/">Home</a>
+           <a href="/about/">About</a>
+           <a href="/rooms/">Rooms</a>
+           <a href="/services/">Services</a>
+           <a href="/gallery/">Gallery</a>
+           <a href="/bookings/">Bookings</a>
+           <a href="/contact/">Contact</a>
+           <a href="/mybookings/">My Bookings</a>
+            <a href="{% url 'dashboard' %}">Dashboard</a>
+           <a href="/logout/">Logout</a>
+
+
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+        <div class="image-section">
+
+<img src="{% static 'img/luxury-hotel-exterior-front-view-night-glowing-illuminated-text-sign-glass-facade-architecture-urban-nobody-tourism-resort-384827766.webp' %}" alt="Hotel Image">
+        </div>
+
+        <div class="text-section">
+            <h1>Welcome to Moonstone  Hotel</h1>
+            <p>
+                Our hotel booking website helps customers easily search, view,
+                and book hotel rooms online. We provide luxury rooms, food
+                services, swimming pool access, free WiFi, and 24/7 support.
+            </p>
+
+
+        </div>
+    </section>
+
+
+    <section class="cards-section">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Luxury Rooms</h3>
+                <p>Comfortable and stylish rooms.</p>
+            </div>
+
+            <div class="card">
+                <h3>Restaurant</h3>
+                <p>Delicious food and beverages.</p>
+            </div>
+
+            <div class="card">
+                <h3>Swimming Pool</h3>
+                <p>Relax and enjoy your stay.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="table-section">
+        <h2>Room Price Details</h2>
+
+        <table border="1">
+            <tr>
+                <th>Room Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Single Room</td>
+                <td>₹2500</td>
+            </tr>
+            <tr>
+                <td>Suite Room</td>
+                <td>₹8000</td>
+            </tr>
+            <tr>
+                <td>Deluxe Room</td>
+                <td>₹4500</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Moonstone Hotel | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+

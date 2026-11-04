@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="4" width="900px" height="600px">
+    <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>file</th>
+    </tr>
+{% for b in profile %}
+<tr>
+    <td>{{ b.name }}</td>
+    <td>{{ b.email }}</td>
+<!--    <td>-->
+<!--        {% if b.image %}-->
+<!--            <img src="{{ b.image.url }}" width="100">-->
+<!--        {% else %}-->
+<!--            no img-->
+<!--        {% endif %}-->
+<!--    </td>-->
+    <td>
+        <a href="{% url 'singleproduct' b.id %}">view</a>
+    </td>
+    <td>
+        <a href="{% url 'delete_product' b.id %}">delete</a>
+    </td>
+    <td>
+        <a href="{% url 'edit_product' b.id %}">edit</a>
+    </td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

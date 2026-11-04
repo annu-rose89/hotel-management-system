@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Booking Success</title>
+
+    <style>
+
+        body{
+            font-family:Arial;
+            background:#f2f2f2;
+        }
+
+        .success-box{
+            width:500px;
+            margin:100px auto;
+            background:white;
+            padding:40px;
+            text-align:center;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        h1{
+            color:green;
+        }
+
+        a{
+            text-decoration:none;
+            background:darkblue;
+            color:white;
+            padding:10px 20px;
+            border-radius:5px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="success-box">
+
+    <h1>Room Booked Successfully ✅</h1>
+
+    <p>Your booking has been completed.</p>
+
+    <br>
+
+    <a href="{% url 'rooms' %}">Back to Rooms</a>
+
+</div>
+
+</body>
+</html>

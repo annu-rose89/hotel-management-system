@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#003c8f;
+            padding:20px;
+            color:white;
+            text-align:center;
+        }
+
+        nav{
+            background:#0d47a1;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        .about-section{
+            width:80%;
+            margin:auto;
+            margin-top:50px;
+            background:white;
+            padding:40px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px lightgray;
+        }
+
+        h1{
+            color:#003c8f;
+        }
+
+        .about-img{
+            width:100%;
+            border-radius:10px;
+            margin-top:20px;
+        }
+
+        footer{
+            background:#003c8f;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Moonstone Hotel</h1>
+</header>
+
+<nav>
+
+    <a href="{% url 'home' %}">Home</a>
+
+<!--    <a href="/about/">About</a>-->
+
+<!--    <a href="#">Rooms</a>-->
+
+<!--    <a href="#">Services</a>-->
+
+<!--    <a href="#">Gallery</a>-->
+
+<!--    <a href="#">Bookings</a>-->
+
+<!--    <a href="#">Contact</a>-->
+
+</nav>
+
+<section class="about-section">
+
+    <h1>About Moonstone Hotel</h1>
+
+    <p>
+        Moonstone Hotel is a luxury hotel booking platform designed to provide
+        customers with comfortable stays, premium rooms, and world-class services.
+    </p>
+
+    <p>
+        Our hotel offers deluxe rooms, swimming pools, restaurants,
+        spa facilities, free WiFi, and 24/7 customer support.
+    </p>
+
+    <p>
+        We focus on customer satisfaction and provide a professional
+        online hotel reservation experience.
+    </p>
+
+</section>
+</body>
+</html>
